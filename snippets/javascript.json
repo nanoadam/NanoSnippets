@@ -1,0 +1,28 @@
+{
+  "Console.log()": {
+    "prefix": "cl",
+    "body": ["console.log(${1})"],
+    "description": "Quick Console Log"
+  },
+  "Create Arrow Function": {
+    "prefix": "funcarrow",
+    "body": ["const ${1:name} = (${2}) => {", "  ${3}", "}"],
+    "description": "Create Arrow Function"
+  },
+  "Simple Express App": {
+    "prefix": "exapp",
+    "body": [
+      "const express = require('express');",
+      "const app = require('app');",
+      "",
+      "app.get('/', (req, res) => {",
+      "    res.send('Hello World');",
+      "});",
+      "",
+      "const port = process.env.port || 3000;",
+      "",
+      "app.listen(port, () => console.log(`Server started on port: ${3000}`));"
+    ],
+    "description": "Simple Express App"
+  }
+}
